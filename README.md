@@ -41,4 +41,5 @@ On the Confluent Cloud Console -- Topics view, there are only two topics created
 
 
 You can also create a Pipeline to read from morethan One Database + morethan One Collection combination.
+
 Hint: [{"$match": {"ns.db": {"$regex": /^(abc|test-db)$/}, "ns.coll": {"$regex": /^(abcTesting|txns)$/}}}]
