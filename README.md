@@ -1,4 +1,4 @@
-# Read from Multiple MongoDb Collections using a Single MongoDB Source Connector
+# Read from Multiple MongoDB Collections using a Single MongoDB Source Connector
 
 When configuring MongoDB Source connector on Confluent Cloud UI or using JSON file in case of Self-managed Connectors, you can see a property called "Collection".
 
