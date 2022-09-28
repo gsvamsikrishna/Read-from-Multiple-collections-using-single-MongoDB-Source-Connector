@@ -34,13 +34,11 @@ On the Confluent Cloud Console -- Topics view, there are only two topics created
 
 ![image](https://user-images.githubusercontent.com/73946498/192704389-e7b6c982-2d8f-48ec-84d5-5ba25f923103.png)
 
-
-
-
-
-
-
 ### References
 - https://docs.confluent.io/cloud/current/connectors/cc-mongo-db-source.html#connection-details 
 - https://www.mongodb.com/docs/kafka-connector/current/source-connector/usage-examples/multiple-sources/
 - https://www.mongodb.com/docs/kafka-connector/current/source-connector/usage-examples/custom-pipeline/
+
+
+You can also create a Pipeline to read from morethan One Database + morethan One Collection combination.
+Hint: [{"$match": {"ns.db": {"$regex": /^(abc|test-db)$/}, "ns.coll": {"$regex": /^(abcTesting|txns)$/}}}]
